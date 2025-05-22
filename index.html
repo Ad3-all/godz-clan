@@ -6,13 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoDz Clan</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #111; color: #eee; margin: 0; padding: 0; text-align: center; }
-        header { background: #000; padding: 20px; }
-        header img { width: 150px; }
-        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-        .section { padding: 40px 20px; border-bottom: 1px solid #333; }
-        form input, form textarea { width: 80%; margin-top: 10px; padding: 10px; background: #222; border: 1px solid #444; color: #fff; }
-        form input[type="submit"] { background: #c00; border: none; cursor: pointer; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0d0d0d;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        header img {
+            width: 180px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            animation: logoDrop 1.5s ease-out;
+        }
+        @keyframes logoDrop {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 15px;
+            margin-top: 15px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            font-size: 1em;
+            border-radius: 8px;
+        }
+        form input[type="submit"] {
+            background: #c00;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form input[type="submit"]:hover {
+            background: #900;
+        }
+        ul {
+            text-align: left;
+            margin: auto;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +91,7 @@
 
     <div class="section" id="storia">
         <h2>Chi siamo</h2>
-        <p>Siamo il GoDz Clan, un clan competitivo e unito in Clash of Clans. Cerchiamo giocatori TH13+ attivi, rispettosi e pronti a dominare nelle guerre.</p>
+        <p>Siamo il GoDz Clan, un clan competitivo in Clash of Clans. Reclutiamo solo TH13+ e garantiamo un ambiente attivo, libero e rispettoso.</p>
     </div>
 
     <div class="section" id="membri">
@@ -39,13 +99,13 @@
         <p>
             👑 Leader: <strong>Ar3s</strong><br>
             🛡️ Co-Capi: <strong>Denid</strong>, <strong>Fabbiuss</strong>, <strong>Giacomo</strong><br>
-            🧙‍♂️ Membri Anziani: <strong>Chiler</strong>, <strong>C-Shark</strong>, <strong>Zac</strong>, <strong>Lost</strong>, <strong>Ciupapi</strong>, <strong>Assassino</strong>, <strong>Wegonebeok</strong>, <strong>Deadpool</strong>
+            🧙‍♂️ Anziani: <strong>Chiler</strong>, <strong>C-Shark</strong>, <strong>Zac</strong>, <strong>Lost</strong>, <strong>Ciupapi</strong>, <strong>Assassino</strong>, <strong>Wegonebeok</strong>, <strong>Deadpool</strong>
         </p>
     </div>
 
     <div class="section" id="reclutamento">
         <h2>Reclutamento</h2>
-        <p>Requisito minimo: Municipio 13. Libertà di parola garantita. Partecipa alle guerre e cresci con noi!</p>
+        <p>Cerchiamo TH13+ con spirito di squadra. Compila il modulo per entrare nel clan!</p>
         <form action="mailto:godzinfomanagement@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="Nome" placeholder="Nome in gioco" required><br>
             <input type="number" name="Municipio" placeholder="Livello municipio" required><br>
@@ -56,18 +116,26 @@
     </div>
 
     <div class="section" id="ruoli">
-        <h2>Ruoli nel Clan</h2>
-        <ul style="text-align: left; display: inline-block;">
-            <li><strong>Leader:</strong> Controllo totale, gestisce membri, guerre e impostazioni.</li>
-            <li><strong>Co-Capo:</strong> Aiuta nella gestione e avvia guerre.</li>
-            <li><strong>Anziano:</strong> Può accettare/invitare/espellere reclute.</li>
-            <li><strong>Membro:</strong> Partecipante attivo senza privilegi amministrativi.</li>
+        <h2>Ruoli del Clan</h2>
+        <ul>
+            <li><strong>Leader:</strong> Guida e gestisce tutto.</li>
+            <li><strong>Co-Capo:</strong> Supporta la gestione e organizza le guerre.</li>
+            <li><strong>Anziano:</strong> Recluta e modera il clan.</li>
+            <li><strong>Membro:</strong> Parte attiva e combattiva del team.</li>
         </ul>
     </div>
 
     <div class="section" id="contatti">
-        <h2>Contatti</h2>
-        <p>📧 Email: godzinfomanagement@gmail.com</p>
+        <h2>Contattaci</h2>
+        <p>Email: godzinfomanagement@gmail.com</p>
+    
+    <div class="section" id="video">
+        <h2>Video del Clan</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBbqK8T-tUI" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oCiEcfAHLFo" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eq9nofqe0Is" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x7xvfRksDmw" frameborder="0" allowfullscreen></iframe>
     </div>
+</div>
 </body>
 </html>
