@@ -82,7 +82,30 @@
       0% { opacity: 0; transform: translateY(40px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+    
+    .clash-img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: translateY(50px) scale(0.9);
+      transition: all 1s ease-in-out;
+    }
+    
+    .clash-img.visible {
+      box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.8);
+      filter: brightness(1.2) blur(0.5px);
+    
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .section-img-container {
+      width: 100%;
+      text-align: center;
+      margin: 40px 0;
+    }
     </style>
+    
     
 </head>
 
@@ -222,7 +245,26 @@
       img.style.transition = "opacity 1s ease-out, transform 1s ease-out";
       observer.observe(img);
     });
+    
+    const allImages = document.querySelectorAll('.clash-img');
+    allImages.forEach(img => {
+      observer.observe(img);
+    });
+
+    observer.disconnect();
+    const advancedObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.3 });
+
+    allImages.forEach(img => {
+      advancedObserver.observe(img);
+    });
     </script>
+    
     
 
     </body>
