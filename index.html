@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoDz Clan</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GoDz Clan</title>
+<style>
         body {
             font-family: 'Segoe UI', sans-serif;
             background: #0d0d0d;
@@ -104,123 +105,123 @@
       text-align: center;
       margin: 40px 0;
     }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
     </style>
-    
-    
 </head>
-
-    <body>
-    <audio autoplay loop controls style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
-        <source src="https://dl.sndup.net/kx9n/Viking_Music_Battle.mp3" type="audio/mpeg">
+<body>
+<div id="intro" style="
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        color: white;
+        font-family: 'Cinzel', serif;
+        font-size: 2em;
+        opacity: 1;
+        transition: opacity 2s ease-out;
+    ">
+<img src="Logo_del_Clan_GD.png" style="width: 200px; margin-bottom: 20px; animation: pulse 3s infinite;"/>
+<div>Il Clan GoDz sta arrivando...</div>
+</div>
+<script>
+      window.addEventListener('load', () => {
+        const intro = document.getElementById('intro');
+        setTimeout(() => {
+          intro.style.opacity = '0';
+          setTimeout(() => { intro.remove(); }, 2000);
+        }, 3000);
+      });
+    </script>
+<audio autoplay="" loop="" muted oncanplay playsinline="" style="display: none;">
+<source src="https://dl.sndup.net/kx9n/Viking_Music_Battle.mp3" type="audio/mpeg"/>
         Il tuo browser non supporta l'audio HTML5.
     </audio>
-    
-    <header>
-        <img src="Logo_del_Clan_GD.png" alt="GoDz Clan Logo">
-        <h1>GoDz Clan</h1>
-        <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">#2J0RPG2QC</p>
-        <nav>
-            <a href="#storia">Storia</a>
-            <a href="#membri">Membri</a>
-            <a href="#reclutamento">Reclutamento</a>
-            <a href="#ruoli">Ruoli</a>
-            <a href="#contatti">Contatti</a>
-        </nav>
-    </header>
-
-    <div class="section" id="storia">
-        
-    <div class="section-img-container">
-        <img src="https://i.imgur.com/MPK4a5G.jpg" alt="Chi siamo" class="clash-img" />
-    </div>
-    <h2 style="font-size: 2em; margin-bottom: 0.5em; animation: fadeInUp 1s ease-in-out;">Chi siamo</h2>
-    
-    <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
+<header>
+<img alt="GoDz Clan Logo" src="Logo_del_Clan_GD.png"/>
+<h1>GoDz Clan</h1>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">#2J0RPG2QC</p>
+<nav>
+<a href="#storia">Storia</a>
+<a href="#membri">Membri</a>
+<a href="#reclutamento">Reclutamento</a>
+<a href="#ruoli">Ruoli</a>
+<a href="#contatti">Contatti</a>
+</nav>
+</header>
+<div class="section" id="storia">
+<div class="section-img-container">
+<img alt="Chi siamo" class="clash-img" src="https://i.imgur.com/MPK4a5G.jpg">
+</img></div>
+<h2 style="font-size: 2em; margin-bottom: 0.5em; animation: fadeInUp 1s ease-in-out;">Chi siamo</h2>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
         Il <strong>GoDz Clan</strong> nasce da un sogno semplice ma potente: <em>dominare Clash of Clans</em>, un villaggio alla volta. Tutto ha avuto inizio tra i banchi di scuola, quando <strong>quattro amici inseparabili</strong> — Ar3s, Denid, Fabbiuss e Giacomo — hanno deciso di fondare un clan capace di lasciare il segno.
     </p>
-    <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
         Con spirito competitivo, voglia di migliorarsi e tante ore passate a perfezionare strategie, i fondatori iniziarono la loro ascesa. Ma è stato l’arrivo degli <strong>alleati più inaspettati</strong> a cambiare tutto: i <strong>compagni di classe di Fabbiuss</strong>, affascinati dal progetto, si unirono con entusiasmo e aiutarono il clan a crescere.
     </p>
-    <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
         Nel tempo, il GoDz Clan ha visto entrare <strong>membri leggendari</strong> come Chiler, C-Shark, Zac, Lost, Ciupapi, Assassino, Wegonebeok e Deadpool, che hanno rafforzato le fondamenta della squadra.
     </p>
-    <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
         Oggi il clan è una vera <strong>famiglia di guerrieri</strong>, uniti dalla passione per il gioco, la lealtà e la libertà di esprimersi. Con municipi dal livello 13 in su, i GoDz non sono solo un gruppo di player… <strong>sono una leggenda in costruzione</strong>.
     </p>
-    
-        <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Siamo il GoDz Clan, un clan competitivo in Clash of Clans. Reclutiamo solo TH13+ e garantiamo un ambiente attivo, libero e rispettoso.</p>
-    </div>
-
-    <div class="section" id="membri">
-        <h2>Membri del Clan</h2>
-        <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
-            👑 Leader: <strong>Ar3s</strong><br>
-            🛡️ Co-Capi: <strong>Denid</strong>, <strong>Fabbiuss</strong>, <strong>Giacomo</strong><br>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Siamo il GoDz Clan, un clan competitivo in Clash of Clans. Reclutiamo solo TH13+ e garantiamo un ambiente attivo, libero e rispettoso.</p>
+</div>
+<div class="section" id="membri">
+<h2>Membri del Clan</h2>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">
+            👑 Leader: <strong>Ar3s</strong><br/>
+            🛡️ Co-Capi: <strong>Denid</strong>, <strong>Fabbiuss</strong>, <strong>Giacomo</strong><br/>
             🧙‍♂️ Anziani: <strong>Chiler</strong>, <strong>C-Shark</strong>, <strong>Zac</strong>, <strong>Lost</strong>, <strong>Ciupapi</strong>, <strong>Assassino</strong>, <strong>Wegonebeok</strong>, <strong>Deadpool</strong>
-        </p>
-    </div>
-
-    <div class="section" id="reclutamento">
-        <h2>Reclutamento</h2>
-        <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Cerchiamo TH13+ con spirito di squadra. Compila il modulo per entrare nel clan!</p>
-        <form action="mailto:godzinfomanagement@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="Nome" placeholder="Nome in gioco" required><br>
-            <input type="number" name="Municipio" placeholder="Livello municipio" required><br>
-            <input type="text" name="Discord" placeholder="Tag Discord" required><br>
-            <textarea name="Motivazione" placeholder="Perché vuoi entrare?" rows="4" required></textarea><br>
-            <input type="submit" value="Invia candidatura">
-        </form>
-    </div>
-
-    <div class="section" id="ruoli">
-        <h2>Ruoli del Clan</h2>
-        <ul>
-            <li><strong>Leader:</strong> Guida e gestisce tutto.</li>
-            <li><strong>Co-Capo:</strong> Supporta la gestione e organizza le guerre.</li>
-            <li><strong>Anziano:</strong> Recluta e modera il clan.</li>
-            <li><strong>Membro:</strong> Parte attiva e combattiva del team.</li>
-        </ul>
-    </div>
-
-    <div class="section" id="contatti">
-        <h2>Contattaci</h2>
-        <p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Email: godzinfomanagement@gmail.com</p>
-    
-    <div class="section" id="video">
-        <h2>Video del Clan</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBbqK8T-tUI" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/oCiEcfAHLFo" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eq9nofqe0Is" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x7xvfRksDmw" frameborder="0" allowfullscreen></iframe>
-    </div>
+</p>
+</div>
+<div class="section" id="reclutamento">
+<h2>Reclutamento</h2>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Cerchiamo TH13+ con spirito di squadra. Compila il modulo per entrare nel clan!</p>
+<form action="mailto:godzinfomanagement@gmail.com" enctype="text/plain" method="post">
+<input name="Nome" placeholder="Nome in gioco" required="" type="text"/><br/>
+<input name="Municipio" placeholder="Livello municipio" required="" type="number"/><br/>
+<input name="Discord" placeholder="Tag Discord" required="" type="text"/><br/>
+<textarea name="Motivazione" placeholder="Perché vuoi entrare?" required="" rows="4"></textarea><br/>
+<input type="submit" value="Invia candidatura"/>
+</form>
+</div>
+<div class="section" id="ruoli">
+<h2>Ruoli del Clan</h2>
+<ul>
+<li><strong>Leader:</strong> Guida e gestisce tutto.</li>
+<li><strong>Co-Capo:</strong> Supporta la gestione e organizza le guerre.</li>
+<li><strong>Anziano:</strong> Recluta e modera il clan.</li>
+<li><strong>Membro:</strong> Parte attiva e combattiva del team.</li>
+</ul>
+</div>
+<div class="section" id="contatti">
+<h2>Contattaci</h2>
+<p style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.6; animation: fadeIn 2s ease-in-out;">Email: godzinfomanagement@gmail.com</p>
+<div class="section" id="video">
+<h2>Video del Clan</h2>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/kBbqK8T-tUI" width="560"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/oCiEcfAHLFo" width="560"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Eq9nofqe0Is" width="560"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/x7xvfRksDmw" width="560"></iframe>
+</div>
 </div>
 
-    <div style="margin-top: 80px; text-align: center;">
-        
-    <div class="section-img-container">
-        <img src="https://i.imgur.com/1b8V1mf.jpg" alt="Unisciti al Clan" class="clash-img" />
-    </div>
-    <h2 style="animation: fadeInUp 1s ease-in-out;">Unisciti al Clan</h2>
-    
-        <form style="display: inline-block; text-align: left; margin: 20px auto; animation: fadeIn 2s ease-in-out;">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" style="width: 250px; height: 30px;"><br>
-            <label for="th">Municipio:</label><br>
-            <input type="number" id="th" name="th" style="width: 250px; height: 30px;"><br>
-            <label for="message">Perché vuoi entrare:</label><br>
-            <textarea id="message" name="message" rows="4" style="width: 250px;"></textarea><br>
-            <input type="submit" value="Invia" style="margin-top: 10px;">
-        </form>
-        <p>Scrivici per dubbi: <strong>godzinfomanagement@gmail.com</strong></p>
-    </div>
-
-    <div style="margin-top: 80px; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-        <img src="https://i.imgur.com/NwRUn7A.jpg" alt="Clash 1" class="clash-img" />
-        <img src="https://i.imgur.com/B5h8qzX.jpg" alt="Clash 2" class="clash-img" />
-        <img src="https://i.imgur.com/4YaGNgB.jpg" alt="Clash 3" class="clash-img" />
-    </div>
-
-    <script>
+<div style="margin-top: 80px; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+<img alt="Clash 1" class="clash-img" src="https://i.imgur.com/NwRUn7A.jpg"/>
+<img alt="Clash 2" class="clash-img" src="https://i.imgur.com/B5h8qzX.jpg"/>
+<img alt="Clash 3" class="clash-img" src="https://i.imgur.com/4YaGNgB.jpg"/>
+</div>
+<script>
       const imgs = document.querySelectorAll('.clash-img');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -264,9 +265,5 @@
       advancedObserver.observe(img);
     });
     </script>
-    
-    
-
-    </body>
-    
+</body>
 </html>
